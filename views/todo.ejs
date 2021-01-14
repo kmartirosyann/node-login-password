@@ -1,0 +1,13 @@
+<div class="card card-body">
+<form action="/todo" method="post" id="todo">
+<input type="text" name= "text" id="text">
+<button type="submit"> <i class="fas fa-sign-in-alt"></i>create todo</button>
+</form>
+<ul>
+<% data.forEach((item)=>{%>
+<li><%= item %></li> 
+<%})%>
+</ul>
+</div>
+
+<script src="/todoPublic.js"></script>

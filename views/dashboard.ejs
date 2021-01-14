@@ -1,0 +1,32 @@
+
+<nav class="bleak">
+<ul class=" nav nav-pills">
+  <li class="nav-item">
+    <% if(typeof dashboard){%>
+      <a class="nav-link active" href="/dashboard">Active</a>
+      <%}else {%><a class="nav-link" href="/dashboard">Active</a>
+   <% } %>
+    
+  </li>
+  <li class="nav-item">
+    <% if(typeof todo){ %>
+      <a class="nav-link active" href="/todo">todo</a>
+      <%}else {%><a class="nav-link" href="/todo">todo</a>
+   <% } %>
+  </li>
+ 
+  <li class="nav-item">
+    <a class="nav-link disabled" href="/users/logout">Logout</a>
+  </li>
+</ul>
+</nav>
+
+
+<div class="container">
+
+</div>
+
+<h1 class="mt-4">Dashboard</h1>
+<p class="lead mb-3">Welcome </p>
+<a href="/users/logout" class="btn btn-secondary">Logout</a>
+
